@@ -9,33 +9,39 @@
 <body>
   <div class="container">
     <div class="row">
-      <form id="account" class="col-xs-6">
-        <div class="form-group">
-          <label for="name">Enter Name:</label>
-          <input class="form-control" id="name" type="text">
-        </div>
-        <div class="form-group">
-          <label for="deposit">Enter Deposit</label>
-          <input class="form-control" id="balance" type="text">
-        </div>
-        <button type="submit">Create Account</button>
-      </form>
-      <form id="deposits" class="col-xs-6">
-        <div class="form-group">
-          <label for="deposit">Deposit Amount:</label>
-          <input class="form-control" id="deposit"  type="text">
-        </div>
-        <div class="form-group">
-          <label for="withdrawal">Withdrawal Amount:</label>
-          <input class="form-control" id="withdrawal"  type="text">
-        </div>
-        <button type="submit">Update Balance</button>
-      </form>
+      <div class="col-xs-6 bg-info">
+        <h1>Register a new account</h1>
+        <form id="account" >
+          <div class="form-group">
+            <label for="name">Enter Name:</label>
+            <input class="form-control" id="name" type="text">
+          </div>
+          <div class="form-group">
+            <label for="deposit">Enter Deposit</label>
+            <input class="form-control" id="balance" type="text">
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+      <div class="col-xs-6 bg-info">
+        <h1>Deposit or withdraw funds</h1>
+        <form id="deposits" >
+          <div class="form-group">
+            <label for="deposit">Deposit Amount:</label>
+            <input class="form-control" id="deposit"  type="text">
+          </div>
+          <div class="form-group">
+            <label for="withdrawal">Withdrawal Amount:</label>
+            <input class="form-control" id="withdrawal"  type="text">
+          </div>
+          <button type="submit">Update Balance</button>
+        </form>
+      </div>
     </div>
     <div class="row">
-      <div class="results">
+      <div id="results" class="bg-info">
         <div>Current Balance:</div>
-        <div id="displaybalance"></div>
+        <div id="displaybalance">$0.00</div>
       </div>
     </div>
   </div>

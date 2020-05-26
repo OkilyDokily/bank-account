@@ -1,0 +1,21 @@
+#bg-info{
+  background-color: aqua;
+}
+
+div.container{
+  width: 43%;
+
+}
+
+#results{
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#displaybalance{
+  width: 100px;
+  border: 1px solid black;
+  padding: 7px;
+  display: inline-block;
+}

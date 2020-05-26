@@ -19,7 +19,7 @@ BankAccount.prototype.subtractFromBalance = function (amount){
 
 let bankAccount;
 function displayBalance(){
-  $("#displaybalance").html(bankAccount.balance);
+  $("#displaybalance").html("$" + bankAccount.balance);
 }
 
 $(document).ready(function(){
