@@ -35,8 +35,10 @@ $(document).ready(function(){
   $("form#deposits").submit(function(e){
     e.preventDefault();
     let deposit = parseInt($("#deposit").val());
-    
     let withdrawal = parseInt($("#withdrawal").val());
+
+    $("#deposit").val("")
+    $("#withdrawal").val("")
 
     bankAccount.addToBalance(deposit);
     bankAccount.subtractFromBalance(withdrawal);
