@@ -1,19 +1,46 @@
 //business logic
 
-function BankAccount(username, deposit){
+function BankAccount(username, balance){
   this.username = username;
-  this.deposit = deposit;
+  this.balance = balance;
 }
 
-BankAccount.prototype.addToDeposit = function (amount){
-  this.deposit += amount;
+BankAccount.prototype.addToBalance = function (amount){
+  if (amount){
+    this.balance += amount;
+  }
 }
 
-BankAccount.prototype.addToDeposit = function (amount){
-  this.deposit -= amount;
+BankAccount.prototype.subtractFromBalance = function (amount){
+  if(amount){
+    this.balance -= amount;
+  }
+}
+
+let bankAccount;
+function displayBalance(){
+  $("#displaybalance").html(bankAccount.balance);
 }
 
 $(document).ready(function(){
-  
+  $("form#account").submit(function(e){
+    e.preventDefault();
+    let name = $("#name").val();
+    let balance = parseInt($("#balance").val());
+
+    bankAccount = new BankAccount(name,balance);
+    displayBalance();
+  })
+
+  $("form#deposits").submit(function(e){
+    e.preventDefault();
+    let deposit = parseInt($("#deposit").val());
+    
+    let withdrawal = parseInt($("#withdrawal").val());
+
+    bankAccount.addToBalance(deposit);
+    bankAccount.subtractFromBalance(withdrawal);
+    displayBalance();
+  })
 })
 
