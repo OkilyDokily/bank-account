@@ -1,5 +1,5 @@
-#bg-info{
-  background-color: aqua;
+.outer{
+  padding: 5px;
 }
 
 div.container{
@@ -7,10 +7,14 @@ div.container{
 
 }
 
+.bg-info{
+  padding: 5px;
+}
+
 #results{
   text-align: center;
   padding: 5px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 #displaybalance{
@@ -18,4 +22,14 @@ div.container{
   border: 1px solid black;
   padding: 7px;
   display: inline-block;
+}
+
+button{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
 }

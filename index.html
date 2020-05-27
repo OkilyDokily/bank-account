@@ -8,41 +8,51 @@
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-xs-6 bg-info">
-        <h1>Register a new account</h1>
-        <form id="account" >
-          <div class="form-group">
-            <label for="name">Enter Name:</label>
-            <input class="form-control" id="name" type="text">
-          </div>
-          <div class="form-group">
-            <label for="deposit">Enter Deposit</label>
-            <input class="form-control" id="balance" type="text">
-          </div>
-          <button type="submit">Create Account</button>
-        </form>
+    <div class="row center">
+      <h1>Welcome to the Prototype Bank</h1>
+      <div class="outer col-xs-6 ">
+        
+        <div class="bg-info">
+          <h1>Register a new account</h1>
+          <form id="account" >
+            <div class="form-group">
+              <label for="name">Enter Name:</label>
+              <input class="form-control" id="name" type="text">
+            </div>
+            <div class="form-group">
+              <label for="deposit">Enter Deposit</label>
+              <input class="form-control" id="balance" type="text">
+            </div>
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
       </div>
-      <div class="col-xs-6 bg-info">
-        <h1>Deposit or withdraw funds</h1>
-        <form id="deposits" >
-          <div class="form-group">
-            <label for="deposit">Deposit Amount:</label>
-            <input class="form-control" id="deposit"  type="text">
-          </div>
-          <div class="form-group">
-            <label for="withdrawal">Withdrawal Amount:</label>
-            <input class="form-control" id="withdrawal"  type="text">
-          </div>
-          <button type="submit">Update Balance</button>
-        </form>
+      <div class="outer col-xs-6">
+        <div class="bg-info">
+          <h1>Deposit or withdraw funds</h1>
+          <form id="deposits" >
+            <div class="form-group">
+              <label for="deposit">Deposit Amount:</label>
+              <input class="form-control" id="deposit"  type="text">
+            </div>
+            <div class="form-group">
+              <label for="withdrawal">Withdrawal Amount:</label>
+              <input class="form-control" id="withdrawal"  type="text">
+            </div>
+            <button type="submit">Update Balance</button>
+          </form>
+        </div>
       </div>
+     
     </div>
     <div class="row">
-      <div id="results" class="bg-info">
-        <div>Current Balance:</div>
-        <div id="displaybalance">$0.00</div>
+      <div class="outer">
+        <div id="results" class="bg-info">
+          <div>Current Balance:</div>
+          <div id="displaybalance">$0.00</div>
+        </div>
       </div>
+      
     </div>
   </div>
 </body>
